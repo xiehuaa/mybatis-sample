@@ -2,6 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.5.3</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.xh</groupId>
@@ -11,13 +16,16 @@
     <modules>
         <module>mybatis</module>
         <module>mybatis-spring</module>
+        <module>mybatis-springboot</module>
     </modules>
 
     <properties>
         <lombok.version>1.18.12</lombok.version>
         <mysql-connector.version>8.0.19</mysql-connector.version>
         <druid.version>1.2.6</druid.version>
+        <druid-springboot.version>1.2.6</druid-springboot.version>
         <mybatis.version>3.5.7</mybatis.version>
+        <mybatis-springboot.version>2.2.0</mybatis-springboot.version>
         <mybatis-spring.version>2.0.6</mybatis-spring.version>
         <fastjson.version>1.2.70</fastjson.version>
 
@@ -26,6 +34,18 @@
         <junit.version>4.13.2</junit.version>
         <log4j.version>2.14.1</log4j.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
     <dependencyManagement>
         <dependencies>
             <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
@@ -42,11 +62,25 @@
                 <version>${druid.version}</version>
             </dependency>
 
+            <!-- https://mvnrepository.com/artifact/com.alibaba/druid-spring-boot-starter -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid-springboot.version}</version>
+            </dependency>
+
             <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
             <dependency>
                 <groupId>org.mybatis</groupId>
                 <artifactId>mybatis</artifactId>
                 <version>${mybatis.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.mybatis.spring.boot/mybatis-spring-boot-starter -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis-springboot.version}</version>
             </dependency>
 
             <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->

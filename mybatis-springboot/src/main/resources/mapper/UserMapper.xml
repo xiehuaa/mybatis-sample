@@ -2,15 +2,15 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.xh.sample.mybatis.spring.mapper.UserMapper">
-    <resultMap id="BaseResultMap" type="com.xh.sample.mybatis.spring.entity.User">
+<mapper namespace="com.xh.sample.mybatis.springboot.mapper.UserMapper">
+    <resultMap id="BaseResultMap" type="com.xh.sample.mybatis.springboot.entity.User">
         <result column="id" property="id" jdbcType="INTEGER"/>
         <result column="name" property="name" jdbcType="VARCHAR"/>
         <result column="age" property="age" jdbcType="INTEGER"/>
         <result column="gender" property="gender" jdbcType="VARCHAR"/>
     </resultMap>
 
-    <insert id="insert" parameterType="com.xh.sample.mybatis.spring.entity.User">
+    <insert id="insert" parameterType="com.xh.sample.mybatis.springboot.entity.User">
         INSERT INTO user (`name`, `age`, `gender`) VALUES (#{name}, #{age}, #{gender})
     </insert>
 

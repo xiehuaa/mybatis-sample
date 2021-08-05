@@ -1,6 +1,6 @@
-package com.xh.sample.mybatis.spring.mapper;
+package com.xh.sample.mybatis.springboot.mapper;
 
-import com.xh.sample.mybatis.spring.entity.User;
+import com.xh.sample.mybatis.springboot.entity.User;
 import org.apache.ibatis.annotations.Param;
 
 /**

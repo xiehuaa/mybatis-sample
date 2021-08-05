@@ -1,8 +1,8 @@
-package com.xh.sample.mybatis.spring.service.impl;
+package com.xh.sample.mybatis.springboot.service.impl;
 
-import com.xh.sample.mybatis.spring.entity.User;
-import com.xh.sample.mybatis.spring.mapper.UserMapper;
-import com.xh.sample.mybatis.spring.service.UserService;
+import com.xh.sample.mybatis.springboot.entity.User;
+import com.xh.sample.mybatis.springboot.mapper.UserMapper;
+import com.xh.sample.mybatis.springboot.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

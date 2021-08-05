@@ -1,6 +1,7 @@
-package com.xh.sample.mybatis.spring.service;
+package com.xh.sample.mybatis.springboot.service;
 
-import com.xh.sample.mybatis.spring.entity.User;
+
+import com.xh.sample.mybatis.springboot.entity.User;
 
 /**
  * Create By IntelliJ IDEA
